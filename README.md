@@ -172,9 +172,8 @@
     </div>
   </div>
 
-  <footer>
-    Thao is played by Claude, reading the classical Judgment and Hao text live and replying in real time.<br>
-    Works here in Claude.ai. A public deployed version would need its own backend to call the API safely.
+  <footer id="footerText">
+    Welcome to Thao's Fortune Telling Shop. Thao will read your Que and Hao and answer with warmth and honesty &mdash; ask her anything.
   </footer>
 </div>
 
@@ -225,6 +224,7 @@ const UI = {
     youName: "You", thaoName: "Thao",
     invalidAlert: "Que must be 1-64 and Hao must be 1-6.",
     noQuestionAlert: "Type a question first - Thao needs something to read for.",
+    footer: "Welcome to Thao's Fortune Telling Shop. Thao will read your Que and Hao and answer with warmth and honesty \u2014 ask her anything.",
   },
   ja: {
     subtitle: "\u5366\u30fb\u723b\u3067\u898b\u308b\u5360\u3044",
@@ -239,6 +239,7 @@ const UI = {
     youName: "\u3042\u306a\u305f", thaoName: "\u30bf\u30aa",
     invalidAlert: "\u5366\u306f1\uff5e64\u3001\u723b\u306f1\uff5e6\u306e\u7bc4\u56f2\u3067\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
     noQuestionAlert: "\u307e\u305a\u8cea\u554f\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+    footer: "\u30bf\u30aa\u306e\u5360\u3044\u30b7\u30e7\u30c3\u30d7\u3078\u3088\u3046\u3053\u305d\u3002\u3042\u306a\u305f\u306e\u5366\u3068\u723b\u3092\u8aad\u307f\u53d6\u308a\u3001\u6e29\u304b\u3055\u3068\u8aa0\u5b9f\u3055\u3092\u3082\u3063\u3066\u304a\u7b54\u3048\u3057\u307e\u3059\u3002\u4f55\u3067\u3082\u8074\u3044\u3066\u306d\u3002",
   },
 };
 
@@ -254,6 +255,7 @@ function applyLanguage(){
   document.getElementById('followupInput').placeholder = t.followupPlaceholder;
   document.getElementById('sendBtn').textContent = t.sendBtn;
   document.getElementById('resetBtn').textContent = t.resetBtn;
+  document.getElementById('footerText').textContent = t.footer;
   document.getElementById('langEnBtn').classList.toggle('active', currentLang === 'en');
   document.getElementById('langJaBtn').classList.toggle('active', currentLang === 'ja');
 }
