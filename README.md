@@ -1,4 +1,4 @@
-html lang="en">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,12 +116,12 @@ html lang="en">
 </head>
 <body>
 <div class="wrap">
-  <div class="brush">\u5361</div>
+  <div class="brush">卦</div>
   <h1>Thao's Fortune Telling Shop</h1>
   <div class="subtitle" id="subtitleText">a que &middot; hao fortune reading</div>
   <div class="lang-toggle">
     <button class="lang-btn active" id="langEnBtn" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="langJaBtn" onclick="setLang('ja')">\u65e5\u672c\u8a9e</button>
+    <button class="lang-btn" id="langJaBtn" onclick="setLang('ja')">日本語</button>
   </div>
   <div class="badge" id="badgeText">&#10024; live AI reading &middot; ask follow-ups</div>
 
