@@ -173,7 +173,7 @@
   </div>
 
   <footer id="footerText">
-    Welcome to Thao's Fortune Telling Shop. Thao will read your Que and Hao and answer with warmth and honesty &mdash; ask her anything.
+    Welcome to Thao's Fortune Telling Shop. Thao will read your Que and Hao and answer with warmth and honesty &mdash; "In Science we trust, Hail AI".
   </footer>
 </div>
 
